@@ -58,6 +58,6 @@ app.use((error, req, res, next) => {
   });
 });
 
-app.listen(5555, () => {
+app.listen(process.env.PORT || 2222, "0.0.0.0", () => {
   console.log(`server is running ! on port 5555`);
 });
