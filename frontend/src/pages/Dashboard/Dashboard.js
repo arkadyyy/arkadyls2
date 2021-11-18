@@ -58,7 +58,6 @@ const Dashboard = ({ history }) => {
 
   useEffect(() => {
     axios.get(`${BASE_API_URL}/all_users`).then((res) => {
-      console.log("~~~~~RES", res);
       dispatch(getAllUsers(res.data));
     });
   }, []);
